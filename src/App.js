@@ -1,5 +1,21 @@
 export default function App() {
-    return (
+  const post = {
+    id: 1,
+    text: 'Hello, world!',
+    timestamp: 'a minute ago',
+    author: {
+      username: 'susan',
+    },
+  }
+
+  return (
+      <>
         <h1>Microblog</h1>
-    );
+        <p>
+          <b>{post.author.username}</b>
+          <br/>
+          {post.text}
+        </p>
+      </>
+  );
 }
